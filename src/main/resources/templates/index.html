@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
         }
 
         header {
-            background-color: #85a392; /* Pastel Green */
+            background-color: #85a392;
             color: #fff;
             text-align: center;
             padding: 100px 0;
@@ -31,21 +32,26 @@
         }
 
         section {
-            background-color: #f8d7da; /* Pastel Red */
+            background-color: #f8d7da;
             padding: 40px 0;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap; /* Added to handle small screens */
         }
 
         .feature {
             text-align: center;
             padding: 20px;
             flex: 1;
+            margin: 10px; /* Added margin for better spacing */
+            border-radius: 8px; /* Added rounded corners */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect for background and box shadow */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow effect */
         }
 
         .feature i {
             font-size: 48px;
-            color: #5d5d5d; /* Dark Gray */
+            color: #5d5d5d;
         }
 
         .feature h2 {
@@ -54,21 +60,33 @@
         }
 
         footer {
-            background-color: #b0d5e2; /* Pastel Blue */
+            background-color: #b0d5e2;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
 
         .feature:hover {
-            background-color: #f0f0f0; /* Light Gray */
+            background-color: #f0f0f0;
+        }
+
+        /* Added styling for hyperlinks */
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Welcome to 6-Days 6-Projects 6-Tools Challenge</h1>
-        <p>Created by @Janmesh Singh</p>
+        <p>Created by <a href="https://www.linkedin.com/in/janmeshsingh00/" target="_blank">@Janmesh Singh</a></p>
     </header>
 
     <div class="container">
@@ -76,13 +94,38 @@
             <div class="feature">
                 <i class="fas fa-lightbulb"></i>
                 <h2>Day 1</h2>
-                <p>Nginx Server Project</p>
+                <p><a href="https://www.linkedin.com/posts/janmeshsingh00_devopschallenge-aws-awscloud-activity-7130242187862155264-Z6TX?utm_source=share&utm_medium=member_desktop">Nginx web server with reverse proxy</a></p>
             </div>
 
             <div class="feature">
                 <i class="fas fa-chart-line"></i>
                 <h2>Day 2</h2>
-                <p>Setting up a Jenkins CI/CD Pipeline</p>
+                <p><a href="https://www.linkedin.com/posts/janmeshsingh00_devopschallenge-jenkinsci-docker-activity-7130626665235320832-dSjb?utm_source=share&utm_medium=member_desktop">Dockerizing Spring MVC, AWS EC2 Hosting, and Jenkins declarative CI/CD Magic</a></p>
+            </div>
+            
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h2>Day 3</h2>
+                <p><a href="https://www.linkedin.com/posts/janmeshsingh00_devopschallenge-jenkinsci-docker-activity-7130979619033219073-jIXY?utm_source=share&utm_medium=member_desktop">Monitoring Mastery with Grafana and Prometheus</a></p>
+            </div>
+        </section>
+        <section>
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h2>Day 4</h2>
+                <p><a href="https://www.linkedin.com/posts/janmeshsingh00_devopschallenge-jenkinsci-docker-activity-7131715365117562880-q6t_?utm_source=share&utm_medium=member_desktop">AWS Serverless V3 - DynamoDB, Lambda, and Postman Testing</a></p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h2>Day 5</h2>
+                <p><a href="https://www.linkedin.com/posts/janmeshsingh00_devopschallenge-jenkinsci-docker-activity-7135881249264386049-E3e4?utm_source=share&utm_medium=member_desktop">Terraforming AWS VPC - Crafting the Perfect Network Architecture</a></p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h2>Day 6</h2>
+                <p><a href="#">Deploying a Spring app on a K8s cluster</a></p>
             </div>
         </section>
     </div>
@@ -91,4 +134,5 @@
         <p>&copy; Hi! This is a Spring Application</p>
     </footer>
 </body>
+
 </html>
